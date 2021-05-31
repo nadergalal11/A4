@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger KING</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class=nav-bar> 
+            <div class="nav-logo">
+                <img src="daco2.png">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close"onclick="closeMenu()"></i>
+                <ul>
+                   <li><a href="#">HOME</a></li>
+                   <li><a href="#">ABOUT US</a></li>
+                   <li><a href="#">RECIP</a></li>
+                </ul>
+                <button type="button"class="btn">SIGN UP</button>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+            <div class="banner-title">
+                <h1>Food is the <span>way to <br>Men's</span> heart and JOY</h1>
+                <button type="button" class="btn">EXPLORE</button>
+            </div>
+            <div class="vertical-bar">
+                <div class="search-icons">
+                    <i class="fa fa-th-list"></i>
+                    <i class="fa fa-search"></i>
+                     </div>
+                <div class="social-icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-whatsapp"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-pinterest"></i>
+                </div>
+            </div>
+            
+            <div class="notifications">
+                <div class="content">
+                    <small>You can now preorder your favourite Burger from our app on GOOGLE PLAY get it instantly.</small>
+                    <p><a href="#">GET IT</a></p>
+                </div>
+                <div class="notification-img">
+                    <img src="app.png" alt="apple-apps">
+                </div>
+            </div>
+    </div>
+</body> 
+<script>
+    var show =document.getElementById("nav-links");
+    function showMenu(){
+        show.style.right = "0";
+    }
+    function closeMenu(){
+        show.style.right = "-200px";
+    }
+</script>   
+</html>
